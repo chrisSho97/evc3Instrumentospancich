@@ -1,5 +1,5 @@
-@server = https://chrissho97-animated-space-trout-rj547w4rx5gcxv4r-8083.preview.app.github.dev
-@api = {{server}}/api/ec3
+@server =https://evc3christianpancich.onrender.com
+@api ={{server}}/api/ec3
 
 ###
 GET {{api}}/categorias
