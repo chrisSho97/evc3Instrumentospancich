@@ -1,5 +1,5 @@
-@server =https://evc3christianpancich.onrender.com
-@api ={{server}}/api/ec3
+@server=https://evc3christianpancich.onrender.com
+@api={{server}}
 
 ###
 GET {{api}}/categorias
@@ -7,7 +7,7 @@ GET {{api}}/categorias
 POST {{api}}/categorias
 Content-Type: application/json
 
-{"nombre": "Percucion"}
+{"nombre": "Instrumento de Cuerda"}
 ################ Instrumentos: ################
 ###
 GET {{api}}/instrumentos
@@ -15,8 +15,8 @@ GET {{api}}/instrumentos
 POST {{api}}/instrumentos
 Content-Type: application/json
 
-{"nombre": "Xilofono", "categoria": "http://localhost/api/ec3/categorias/2"}
+{"nombre": "Guitarra", "categoria":"http://localhost/api/ec3/categorias/2"}
 ###
-GET {{api}}/instrumentos/1/categoria
+GET {{api}}/instrumentos/2/categoria
 ###
 GET {{api}}/instrumentos?sort=nombre,desc
