@@ -1,0 +1,22 @@
+@server = https://chrissho97-animated-space-trout-rj547w4rx5gcxv4r-8083.preview.app.github.dev
+@api = {{server}}/api/ec3
+
+###
+GET {{api}}/categorias
+###
+POST {{api}}/categorias
+Content-Type: application/json
+
+{"nombre": "Percucion"}
+################ Instrumentos: ################
+###
+GET {{api}}/instrumentos
+###
+POST {{api}}/instrumentos
+Content-Type: application/json
+
+{"nombre": "Xilofono", "categoria": "http://localhost/api/ec3/categorias/2"}
+###
+GET {{api}}/instrumentos/1/categoria
+###
+GET {{api}}/instrumentos?sort=nombre,desc
